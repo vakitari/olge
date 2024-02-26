@@ -29,8 +29,26 @@ class UserService
   public function log($login,$password) {
     $mysqli = new mysqli("localhost", "root", "", "olge");
 
-    $result = $mysqli->query("SELECT * FROM users");
+    $result = $mysqli->query("SELECT * FROM users WHERE login = '$login' AND password = '$password'");
+    $user = $result->fetch_assoc();
 
+    if ($user == null) {
+      var_dump($user);
+
+      $_SESSION['error'] = "Пользователь $login не найден"; 
+      header("location:/olge/view/log.php");
+      die();
+    }
+    $_SESSION['id_user'] = $user['id'];
+    $_SESSION['role'] = $user['role'];
+    $_SESSION['auth'] = true;
+    header("location:/olge/view/home.php");
+    var_dump($result);
     
+
+
+
+
+
   }
 }

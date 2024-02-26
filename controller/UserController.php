@@ -12,7 +12,11 @@ class UserController
   }
 
   function login( ) {
-    
+    include '../service/UserService.php';
+    $service = new UserService();
+    $login = $_POST["login"];
+    $password = $_POST["password"];
+    $service->log($login,$password);
   }
 
 

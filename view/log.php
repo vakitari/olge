@@ -3,7 +3,7 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   include '../controller/UserController.php';
    $controller = new UserController();
-   $controller->register();
+   $controller->login();
 
 }
 if (isset($_SESSION['error'])) {
