@@ -17,6 +17,9 @@ include_once "component/start.php";
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
   </div>
+<div class="col-3">
+
+</div>
   <?php
 include_once "component/end.php";
 

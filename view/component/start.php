@@ -1,5 +1,5 @@
 <?php 
-session_start();1 
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +23,9 @@ session_start();1
       font-family: "Oswald", sans-serif;
       display: flex;
 
+    }
+    #registerForm{
+        width: 70%;
     }
 
     .body-logo h1 {
