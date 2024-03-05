@@ -6,6 +6,26 @@ include_once "component/start.php";
             <p class="pMain">Мы предоставляем информационную систему для учета грузоперевозок. Наша система помогает отслеживать движение грузов, контролировать их расход и приход, а также предоставляет подробные отчеты.</p>
             <a href="#" id="registerButton" class="btn btn-outline-success">Попробуйте бесплатно</a>
 
+            <div class="mid-con">
+                <p>Мы предоставляем</p>
+                <div class="mid-inf">
+            <div class="card">
+                <p>Перевозка</p>
+                <img style="border: 2px solid;border-color: cadetblue;" src="img/perev.jpg" alt="123">
+                <p style="margin:20px">Из года в год мы оптимизируем наши маршруты, для самой быстрой и безопасной доставки</p>
+            </div>
+            <div class="card">
+                <p>Автоматизация</p>
+                <img style="border: 2px solid;border-color: #4e92ff;" src="img/avtomat.png" alt="123">
+                <p style="margin:20px">Устаревшие методы организации доставки никому не нужны, мы предоставляем лучшую автоматизированную систему</p>
+            </div>
+            <div class="card">
+                <p>Оповещения</p>
+                <img style="border: 2px solid;border-color:red;" src="img/opov.jpg" alt="123">
+                <p style="margin:20px">Ради удобства пользования нашей программой, мы реализовали оповещение статуса транспортировки, вес и т.д.</p>
+            </div>
+            </div>
+            </div>
             <!-- Модальное окно -->
             <div id="registerModal" class="modal">
                 <!-- Форма регистрации -->

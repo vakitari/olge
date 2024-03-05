@@ -10,10 +10,27 @@
 
     <style>
         /* Стили модального окна */
+        .button {
+            background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+            background-size: 200% 100%;
+            background-position: left bottom;
+            transition: background-position 0.5s ease;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+}
+html, body{
+    display: flex;
+    justify-content: center;
+}
 
+.button:hover {
+  background-position: right bottom;
+}
     </style>
 </head>
 <body>
-
+<button class="button">Кнопка</button>
 </body>
 </html>
